@@ -1,0 +1,15 @@
+﻿<Window x:Class="Andras_6tti_Wpf_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Andras_6tti_Wpf_App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Up left" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="red"/>
+        <Button Content="Up Right" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="green"/>
+        <Button Content="Down left" HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="blue"/>
+        <Button Content="Down Right" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="HotPink"/>
+    </Grid>
+</Window>
