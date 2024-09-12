@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Capture d%27écran 2024-09-12 135412.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Capture d'écran 2024-09-12 135412.png" />
+  </ItemGroup>
+
+</Project>

@@ -5,10 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:andrasWpfAct1Ex1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600">
+        Title="MainWindow" Height="450" Width="600">
     <Grid>
-        <Button Content="Button 1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="100"/>
-        <Button Content="Button 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="98" Margin="0,100,0,0"/>
-        <DockPanel Grid.Row="1" Grid.Column="1" Height="385" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <Button Content="Button 1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="300"/>
+            <Button Content="Button 2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="300"/>
+        </StackPanel>
+        <DockPanel Grid.Column="1" Grid.Row="0">
+            <Button DockPanel.Dock="Top" Height="50">
+                Top
+            </Button>
+            <Button DockPanel.Dock="Bottom" Height="50">
+                Bottom
+            </Button>
+            <Button DockPanel.Dock="Left" Width="50">
+                Left
+            </Button>
+            <Button DockPanel.Dock="Right" Width="50">
+                Right
+            </Button>
+            <Button>
+                Center
+            </Button>
+        </DockPanel>
+        <WrapPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Width="90">Button 1</Button>
+            <Button Width="90">Button 2</Button>
+            <Button Width="90">Button 3</Button>
+            <Button Width="90" Height="70">Button 4</Button>
+            <Button Width="90" Height="70">Button 5</Button>
+            <Button Width="90" Height="70">Button 6</Button>
+        </WrapPanel>
+        <Canvas Grid.Column="1" Grid.Row="1">
+            <Ellipse
+                Width="150"
+                Height="150"
+                Fill="Black"
+                Canvas.Left="87"
+                Canvas.Top="34" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                />
+            <Ellipse
+                Width="100"
+                Height="100"
+                Fill="Yellow"
+                Canvas.Left="112"
+                Canvas.Top="59" VerticalAlignment="Top" HorizontalAlignment="Center" 
+                />
+            <Ellipse
+                Width="50"
+                Height="50"
+                Fill="Red"
+                Canvas.Left="137"
+                Canvas.Top="84" VerticalAlignment="Center" HorizontalAlignment="Left" 
+                />
+        </Canvas>
     </Grid>
 </Window>
