@@ -36,7 +36,7 @@ Pour cloner ce dépôt et commencer à utiliser le code source :
    
 Ouvrez le projet avec Visual Studio.
 
-2. Utilisation
+## Utilisation
 Pour utiliser les projets dans ce dépôt :
 
 Ouvrez le fichier solution (.sln) dans Visual Studio.
