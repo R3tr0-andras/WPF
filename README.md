@@ -42,14 +42,14 @@ Pour utiliser les projets dans ce dépôt :
 Ouvrez le fichier solution (.sln) dans Visual Studio.
 Sélectionnez le projet que vous souhaitez exécuter.
 Appuyez sur F5 pour compiler et exécuter l'application.
-Fonctionnalités
+## Fonctionnalités
 Voici quelques fonctionnalités incluses dans les projets :
 
 Interface utilisateur réactive avec XAML
 Binding de données et MVVM (Model-View-ViewModel)
 Animations et transitions fluides
 Gestion des événements et interactions utilisateur
-Contributions
+## Contributions
 Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, veuillez suivre ces étapes :
 
 Fork ce dépôt.
@@ -57,7 +57,7 @@ Créez une nouvelle branche (git checkout -b ma-nouvelle-fonctionnalité).
 Apportez vos modifications et commitez-les (git commit -m 'Ajout d'une nouvelle fonctionnalité').
 Poussez vos modifications (git push origin ma-nouvelle-fonctionnalité).
 Ouvrez une pull request.
-Licence
+## Licence
 Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
 
 Merci d'avoir consulté mon dépôt de projets WPF/XAML ! N'hésitez pas à poser des questions ou à laisser des commentaires.
