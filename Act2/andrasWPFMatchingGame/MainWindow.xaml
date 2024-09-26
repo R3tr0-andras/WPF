@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:andrasWPFMatchingGame"
         mc:Ignorable="d"
-        Title="Trouvez toutes les paires d'animaux" Height="450" Width="400">
+        Title="Trouvez toutes les paires d'animaux" Height="500" Width="400">
     <Grid x:Name="grdMain">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -18,9 +18,10 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition Height="50px"/>
         </Grid.RowDefinitions>
         <!-- 1ere -->
-        <TextBlock x:Name="txtTemps" Grid.Row="3" Grid.ColumnSpan="4" FontSize="36" Text="Temps écoulé" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="92,60,0,0" />
+        <TextBlock x:Name="txtTemps" Grid.Row="4" Grid.ColumnSpan="4" FontSize="36" Text="Temps écoulé" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="92,0,0,0"  MouseDown="txtTemps_MouseDown"/>
         <TextBlock x:Name="mous" HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" FontSize="36" MouseDown="mous_MouseDown" />
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" FontSize="36" Grid.Column="1" MouseDown="mous_MouseDown" />
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="?" FontSize="36" Grid.Column="2" MouseDown="mous_MouseDown" />

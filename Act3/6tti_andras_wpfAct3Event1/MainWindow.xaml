@@ -1,0 +1,33 @@
+﻿<Window x:Class="_6tti_andras_wpfAct3Event1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6tti_andras_wpfAct3Event1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="300">
+    <Grid x:Name="grdMaiN" Background="#FF8F9FAF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- Lettre 'A B C'-->
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="A" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" FontWeight="Bold" FontSize="36" />
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="B" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" FontSize="36" FontWeight="Bold" />
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="C" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" FontSize="36" FontWeight="Bold" />
+        <!-- Zonne de texte -->
+        <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
+        <!-- Boutton calculer -->
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Calculer" HorizontalAlignment="Center" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24" MouseEnter="hover"/>
+        <Button Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Content="V" HorizontalAlignment="Center" VerticalAlignment="Center" Width="35" Height="40" FontWeight="Bold" FontSize="24"/>
+    </Grid>
+</Window>

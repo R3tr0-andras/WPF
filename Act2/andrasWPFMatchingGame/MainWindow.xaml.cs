@@ -54,6 +54,7 @@ namespace andrasWPFMatchingGame
             "🐀","🐀",
             };
 
+
             foreach (TextBlock textBlock in grdMain.Children.OfType<TextBlock>())
             {
                 if (textBlock.Name != "txtTemps")
@@ -62,9 +63,9 @@ namespace andrasWPFMatchingGame
                     nextEmoji = animalEmoji[index];
                     textBlock.Text = nextEmoji;
                     animalEmoji.RemoveAt(index);
+                    textBlock.Visibility = Visibility.Visible;
                 }
             }
-
 
             tempsEcoule = 0;
             nbPairesTrouvees = 0;
@@ -76,6 +77,7 @@ namespace andrasWPFMatchingGame
             if (nbPairesTrouvees == 8)
             {
                 SetUpGame();
+
             }
         }
 
@@ -111,6 +113,11 @@ namespace andrasWPFMatchingGame
                 timer.Stop();
                 txtTemps.Text = txtTemps.Text + " - Rejouer ? ";
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SetUpGame();
         }
     }
 }

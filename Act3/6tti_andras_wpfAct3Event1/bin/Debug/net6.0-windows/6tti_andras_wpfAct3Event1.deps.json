@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "6tti_andras_wpfAct3Event1/1.0.0": {
+        "runtime": {
+          "6tti_andras_wpfAct3Event1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "6tti_andras_wpfAct3Event1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
