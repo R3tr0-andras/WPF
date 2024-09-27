@@ -22,12 +22,17 @@
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="A" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" FontWeight="Bold" FontSize="36" />
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="B" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" FontSize="36" FontWeight="Bold" />
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="C" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" FontSize="36" FontWeight="Bold" />
-        <!-- Zonne de texte -->
-        <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
-        <!-- Boutton calculer -->
-        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Calculer" HorizontalAlignment="Center" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24" MouseEnter="hover"/>
-        <Button Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Content="V" HorizontalAlignment="Center" VerticalAlignment="Center" Width="35" Height="40" FontWeight="Bold" FontSize="24"/>
+
+        <!-- Zone de texte -->
+        <TextBox x:Name="txtA" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
+        <TextBox x:Name="txtB" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
+        <TextBox x:Name="txtC" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24"/>
+
+        <!-- Bouton calculer -->
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Calculer" HorizontalAlignment="Center" VerticalAlignment="Center" Width="160" Height="40" FontWeight="Bold" FontSize="24" 
+                MouseEnter="Calculer_MouseEnter" MouseLeave="Calculer_MouseLeave" Click="Calculer_Click"/>
+
+        <!-- Bouton "V" -->
+        <Button x:Name="btnV" Grid.Row="3" Grid.Column="2" Content="V" HorizontalAlignment="Center" VerticalAlignment="Center" Width="35" Height="40" FontWeight="Bold" FontSize="24" Visibility="Collapsed"/>
     </Grid>
 </Window>
