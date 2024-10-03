@@ -1,0 +1,73 @@
+﻿<Window x:Class="_6ttiAndras_interro2WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6ttiAndras_interro2WPF"
+        mc:Ignorable="d"
+        Title="Le jeu des 500" Height="300" Width="400">
+
+    <Grid Background="Orange">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0" Grid.Column="0" Header="Paramètrage du jeu et des joueurs" FontWeight="Bold" FontSize="11" Height="164" Grid.RowSpan="2" VerticalAlignment="Top">
+        </GroupBox>
+        <TextBox Width="25" Height="12" VerticalAlignment="Top" Margin="162,29,12,0"/>
+        <TextBlock Text="Nombre de dés (de 6 à 8)" Height="12" FontWeight="Bold" FontSize="10" Margin="10,28,40,44" Width="150" />
+        <TextBlock Text="Joueurs déjà inscrits ( de 2 à 4)" FontWeight="Bold" FontSize="10" Margin="10,60,40,12" Height="12" Width="150"/>
+        <ComboBox Margin="10,4,14,78" Height="12" Grid.Row="1">
+            <ComboBoxItem>Nom du joueur</ComboBoxItem>
+        </ComboBox>
+        <TextBlock FontWeight="Bold" FontSize="10" Text="Pseudo" Margin="10,26,140,56" Height="12" Width="50" Grid.Row="1" />
+        <TextBox Height="12" VerticalAlignment="Top" Margin="57,27,61,0" Grid.Row="1"/>
+        <Button Content="Ajouter" Height="12" Width="175" Margin="9,52,16,30" Grid.Row="1" Background="#FFFFF170" FontWeight="Bold" Click="Button_Click" FontSize="10"/>
+        <GroupBox Grid.Row="1" Margin="0,84,0,10" Grid.RowSpan="2">
+
+        </GroupBox>
+        <Button Content="Démarrer le jeu" Height="12" Width="175" Margin="9,20,16,63" Grid.Row="2" Background="#FFFFF170" FontWeight="Bold" Click="Button_Click" FontSize="10"/>
+        <Button Content="Stopper le jeu" Height="12" Width="175" Margin="10,37,15,46" Grid.Row="2" Background="#FFFFF170" FontWeight="Bold" Click="Button_Click" FontSize="10"/>
+        <TextBlock Height="12" FontWeight="Bold" FontSize="10" Margin="16,2,34,81" Width="150" Grid.Column="1" ><Run Language="fr-be" Text="C'est le tour de ..."/></TextBlock>
+        <Grid Background="Orange" Grid.ColumnSpan="2" Grid.RowSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <GroupBox Grid.Row="0" Grid.Column="0" Header="Paramètrage du jeu et des joueurs" FontWeight="Bold" FontSize="11" Height="164" Grid.RowSpan="2" VerticalAlignment="Top"/>
+            <TextBox Width="25" Height="12" VerticalAlignment="Top" Margin="162,29,12,0"/>
+            <TextBlock Text="Nombre de dés (de 6 à 8)" Height="12" FontWeight="Bold" FontSize="10" Margin="10,28,40,44" Width="150" />
+            <TextBlock Text="Joueurs déjà inscrits ( de 2 à 4)" FontWeight="Bold" FontSize="10" Margin="10,60,40,12" Height="12" Width="150"/>
+            <ComboBox Margin="10,4,14,78" Height="12" Grid.Row="1">
+                <ComboBoxItem Content="Nom du joueur"/>
+            </ComboBox>
+            <TextBlock FontWeight="Bold" FontSize="10" Text="Pseudo" Margin="10,26,140,56" Height="12" Width="50" Grid.Row="1" />
+            <TextBox Height="12" VerticalAlignment="Top" Margin="57,27,61,0" Grid.Row="1"/>
+            <Button Content="Ajouter" Height="12" Width="175" Margin="9,52,16,30" Grid.Row="1" Background="#FFFFF170" FontWeight="Bold" Click="Button_Click" FontSize="10"/>
+            <GroupBox Grid.Row="1" Margin="0,84,0,10" Grid.RowSpan="2"/>
+            <Button Content="Démarrer le jeu" Height="12" Width="175" Margin="9,20,16,63" Grid.Row="2" Background="#FFFFF170" FontWeight="Bold" Click="Button_Click" FontSize="10"/>
+            <Button Content="Stopper le jeu" Height="12" Width="175" Margin="10,37,15,46" Grid.Row="2" Background="#FFFFF170" FontWeight="Bold" Click="Button_Click" FontSize="10"/>
+            <TextBlock Height="12" FontWeight="Bold" FontSize="10" Margin="16,2,34,81" Width="150" Grid.Column="1" ><Run Language="fr-be" Text="C'est le tour de ..."/></TextBlock>
+            <Button Content="LANCER LES DES" Height="12" Width="175" Margin="12,20,12,63" Background="#FFFFF170" FontWeight="Bold" Click="Button_Click" FontSize="10" Grid.Column="1"/>
+            <GroupBox Header="Résultats" Grid.Column="1" Margin="0,47,0,47" Grid.RowSpan="2" FontWeight="Bold" />
+            <TextBlock Height="12" FontWeight="Bold" FontSize="10" Margin="5,68,45,15" Width="150" Grid.Column="1" ><Run Language="fr-be" Text="JET : (1)(2)(3)"/></TextBlock>
+            <TextBlock Height="12" FontWeight="Bold" FontSize="10" Margin="5,4,45,78" Width="150" Grid.Column="1" Grid.Row="1" ><Run Language="fr-be" Text="Points gagnés : ..."/></TextBlock>
+            <TextBlock Height="12" FontWeight="Bold" FontSize="10" Margin="5,22,45,60" Width="150" Grid.Column="1" Grid.Row="1" ><Run Language="fr-be" Text="Total des points : ..."/></TextBlock>
+            <TextBlock Text="'Pseudo' tu peux relancer 3 dés !..." Grid.Column="1" Margin="5,43,20,40" Grid.Row="2" FontSize="10" FontWeight="Bold" Height="12" Width="175"/>
+            <CheckBox Grid.Column="1" Content="Relancer !" HorizontalAlignment="Left" Margin="5,57,0,0" Grid.Row="2" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="12" FontWeight="Bold"/>
+            <Button Content="JOUEUR SUIVANT" Height="12" Width="175" Margin="12,74,12,9" Grid.Row="2" Background="#FFFFF170" FontWeight="Bold" Click="Button_Click" FontSize="10" Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</Window>
