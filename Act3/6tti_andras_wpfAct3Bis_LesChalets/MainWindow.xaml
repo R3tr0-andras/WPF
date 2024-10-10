@@ -1,0 +1,61 @@
+﻿<Window x:Class="_6tti_andras_wpfAct3Bis_LesChalets.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6tti_andras_wpfAct3Bis_LesChalets"
+        mc:Ignorable="d"
+        Title="Reservation Au Centre De Vacances Asty-Moulin" Height="450" Width="700">
+    <Grid Background="#FFBB3C3C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- TYPE DE LOGEMENT -->
+        <GroupBox Header="TYPE DE LOGEMENT" VerticalAlignment="Top" Width="200" Height="150" Margin="17,10,16,0" Grid.RowSpan="2" Foreground="White">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="50">
+                <RadioButton HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="100" FontWeight="Bold" FontSize="22" Foreground="White">Chalet</RadioButton>
+                <RadioButton Content="Tente" VerticalAlignment="Center" HorizontalAlignment="Center" Height="25" Width="100" FontSize="22" FontWeight="Bold" Foreground="White"/>
+            </StackPanel>
+        </GroupBox>
+        <CheckBox Content="RESERVATION" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="15" Foreground="White" FontSize="16" FontWeight="Bold"/>
+        <GroupBox Header="RESULTATS" Grid.Row="2" Grid.ColumnSpan="2" Width="400" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" >
+            <StackPanel>
+                <TextBlock Text="Prix à Payer :" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontSize="24" ></TextBlock>
+                <TextBlock Text="Nombre de semaines :" HorizontalAlignment="Left" FontSize="24" FontWeight="Bold" ></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="CARACTERISTIQUES DU SEJOUR" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Grid.RowSpan="2" Margin="30,0,0,26" Width="400" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Nbre de Personnes (entre 1 et 6) :" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold" Height="35"></TextBlock>
+                    <TextBox x:Name="nbPer" TextWrapping="Wrap" Text="TextBox" Width="120" HorizontalAlignment="Right" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Date d'arrivée :" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Height="35"></TextBlock>
+                    <DatePicker x:Name="dtPicker">
+                        <DatePicker.BlackoutDates>
+                            <CalendarDateRange End="12/31/2025 23:59:00" Start="01/01/2024 11:59 PM" />
+                        </DatePicker.BlackoutDates>
+                    </DatePicker>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <TextBlock Text="Date de sortie :" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Height="35"></TextBlock>
+                    <TextBox TextWrapping="Wrap" Text="TextBox" Width="120" HorizontalAlignment="Right" Margin="100,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Button Content="Duree sortie" Foreground="Black" FontWeight="Bold" FontSize="20" Width="150" Height="30" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Durée en semaines" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Height="35" Margin="0,0,10,0"> </TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <Button Grid.Column="2" Content="Calculer" HorizontalAlignment="Center" Margin="0,23,0,0" Grid.Row="2" Foreground="Black" FontWeight="Bold" FontSize="20" Width="150" Height="30" VerticalAlignment="Top"/>
+        <Button Grid.Column="2" Content="Init" HorizontalAlignment="Center" Margin="0,93,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="20" Width="150" Height="30"/>
+    </Grid>
+</Window>
