@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_6ttiAndrasEx3Damiers"
         mc:Ignorable="d"
-        Title="MainWindow" Height="660" Width="660">
+        Title="MainWindow" Height="560" Width="530">
     <Grid x:Name="grdMain">
 
     </Grid>
