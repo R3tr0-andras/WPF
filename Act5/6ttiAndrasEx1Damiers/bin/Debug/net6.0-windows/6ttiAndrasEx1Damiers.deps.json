@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "6ttiAndrasEx1Damiers/1.0.0": {
+        "runtime": {
+          "6ttiAndrasEx1Damiers.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "6ttiAndrasEx1Damiers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
