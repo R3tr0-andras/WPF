@@ -18,7 +18,7 @@ namespace _6ttiAndrasEx3Damiers
     
     public partial class MainWindow : Window
     {
-        public Button[,] MatButton = new Button[10, 10];
+        public Button[,] MatButton;
 
         // Img
         public BitmapImage fou = new BitmapImage(new Uri("C:\\Users\\Andra\\Desktop\\wpf\\Act5\\6ttiAndrasEx3Damiers\\IMG\\b.png"));
@@ -49,7 +49,7 @@ namespace _6ttiAndrasEx3Damiers
         }
         private void GridColorSet()
         {
-            
+            MatButton = new Button[10, 10];
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
