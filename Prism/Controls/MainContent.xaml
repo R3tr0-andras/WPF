@@ -1,0 +1,77 @@
+﻿<!-- ========================================= -->
+<!-- Controls/MainContent.xaml - Zone principale -->
+<UserControl x:Class="Prism.Controls.MainContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Border Background="#606060"
+            BorderThickness="0">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" MinHeight="200"/>
+                <RowDefinition Height="Auto" MinHeight="35"/>
+            </Grid.RowDefinitions>
+
+            <!-- Zone de contenu principal -->
+            <Border Grid.Row="0" 
+                    Background="#606060"
+                    Margin="0">
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Auto"
+                              Padding="20">
+                    <Grid>
+                        <Viewbox Stretch="Uniform" 
+                                 MaxWidth="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=ScrollViewer}}"
+                                 MaxHeight="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=ScrollViewer}}">
+                            <StackPanel HorizontalAlignment="Center" 
+                                        VerticalAlignment="Center">
+                                <TextBlock Text="Zone de contenu principal" 
+                                           Foreground="White"
+                                           FontSize="24"
+                                           FontWeight="Light"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,0,0,10"/>
+                                <TextBlock Text="Cette zone s'adapte à toutes les tailles" 
+                                           Foreground="#CCFFFFFF"
+                                           FontSize="14"
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Viewbox>
+                    </Grid>
+                </ScrollViewer>
+            </Border>
+
+            <!-- Barre rouge du bas -->
+            <Border Grid.Row="1" 
+                    Background="#D32F2F" 
+                    MinHeight="40">
+                <Grid Margin="15,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" 
+                                Orientation="Horizontal" 
+                                VerticalAlignment="Center">
+                        <TextBlock Text="↵ Ouvrir" 
+                                   Foreground="White" 
+                                   FontSize="12" 
+                                   Margin="0,0,15,0"/>
+                        <TextBlock Text="Esc Fermer" 
+                                   Foreground="White" 
+                                   FontSize="12"/>
+                    </StackPanel>
+
+                    <TextBlock Grid.Column="1"
+                               Text="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Window}, StringFormat='L: {0:F0}'}"
+                               Foreground="#CCFFFFFF" 
+                               FontSize="10" 
+                               VerticalAlignment="Center"
+                               Opacity="0.7"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>

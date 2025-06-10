@@ -1,0 +1,16 @@
+﻿<!-- ========================================= -->
+<!-- 6. App.xaml - Référencement des ressources -->
+<Application x:Class="Prism.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/AppStyles.xaml"/>
+                <ResourceDictionary Source="Templates/DataTemplates.xaml"/>
+                <ResourceDictionary Source="Themes/Theme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
